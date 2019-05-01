@@ -125,7 +125,7 @@ Have a look into below image how unit test should work on your production code.
 
 
 ### Homework
-Add following more functionalities/capabilities to existing query builder on **example3.js**
+Create a query builder with following capabilities : 
 - Should able to add **join** (left, right, cross etc).
 - Should able to add **limit**.
 - Should able to add **group by**.
