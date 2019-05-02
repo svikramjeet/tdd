@@ -128,6 +128,9 @@ Have a look into below image how unit test should work on your production code.
 Create a query builder with following capabilities in the order specified, with a commit per task:
 
 1. Generate a select query to select all columns from a table.
-** Acceptance Criteria **
+
+**Acceptance Criteria**
+
 If the table name is `products`, then the assertion should look something like:
+
 `$this->assertEquals('select * from products', $sql->select('products'))`
