@@ -125,8 +125,9 @@ Have a look into below image how unit test should work on your production code.
 
 
 ### Homework
-Create a query builder with following capabilities : 
-- Should able to add **join** (left, right, cross etc).
-- Should able to add **limit**.
-- Should able to add **group by**.
-- Should able to add **or** and **and** conditions.
+Create a query builder with following capabilities in the order specified, with a commit per task:
+
+1. Generate a select query to select all columns from a table.
+** Acceptance Criteria **
+If the table name is `products`, then the assertion should look something like:
+`$this->assertEquals('select * from products', $sql->select('products'))`
