@@ -42,12 +42,11 @@ If the table name is `products` and the columns required to be fetched are `id` 
 
 6. **Generate a query with a table joined with other table**
 
-` *Acceptance Criteria :*
+ > *Acceptance Criteria :*
 
-If main table is "products" and you want to join "products" table with "categories" table, Your query should look like below.
+    If main table is `products` and you want to join `products` table with `categories` table, Your query should look like below.
 
-```$this->assertEquals('select * from products join categories on products.category_id=categories.id', $sql->select('products', 'categories', ['id', 'category_id']))```
-`
+    `$this->assertEquals('select * from products join categories on products.category_id=categories.id', $sql->select('products', 'categories', ['id', 'category_id']))`
 
 7. **Generate a query that limits the result from products table to 10.**
 
