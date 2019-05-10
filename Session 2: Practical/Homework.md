@@ -31,7 +31,7 @@ The table name is `products` and the columns required to be fetched are `id` and
 The table name is `products` and the columns required to be ordered are `name` and `category` and sorted as ascending by `name` and `category`.
 
 
-```$this->assertEquals('select * from products order by name asc, category asc', $sql->select('products', [['id', 'desc'],['category','asc']]))```
+```$this->assertEquals('select * from products order by name asc, category asc', $sql->select('products', [['name', 'asc'],['category','asc']]))```
 
 5. **Generate a select query to select specific columns from a table, with order by on a column - with capitalized keywords, and correct spacings.**
 
