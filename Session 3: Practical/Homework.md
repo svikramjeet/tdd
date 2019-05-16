@@ -88,5 +88,5 @@ assertEqual('b', $b);
 
 9. Create a test to check if @datProvider amd @depends annotation can work together in a test.
 
-10 Create a test that have assertCount($count, $array) assertion in it.
+10. Create a test that have assertCount($count, $array) assertion in it.
 
