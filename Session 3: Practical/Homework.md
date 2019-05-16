@@ -26,3 +26,67 @@ assertInstanceOf(User::class, $user);
 ```
 assertArrayHasKey('email', $user);
 ```
+
+3. Similar to the task 2, more validation need to be added like name to be unique, password should be minumum 6 and maximum 8 characters.
+
+**Acceptance Criteria**
+
+- Add the rules for both name and password.
+- Both the tests created should have following assertions
+
+```
+assertArrayHasKey('name', $user);
+assertArrayHasKey('password', $user);
+```
+
+4. Create a test that used the output of other test as it's input.
+
+**Acceptance Criteria**
+
+- Use of annotation @depends
+- Create a test to successfully create a user
+- Use this user id of user in other test to create a product.
+
+5. Create a test to see if we can have it's dependency on 2 tests.
+
+**Acceptance Criteria**
+
+- Create a test A() and test B()
+- Create test C() which have annotations @depends A and @depends B
+- Validate with assertions
+
+```
+assertEqual('a', $a);
+assertEqual('b', $b);
+```
+
+6. Create a test to validate url with regular expression. 
+
+**Acceptance Criteria**
+
+- There should be atleast 3 datasets of url to validate the url creating function.
+- Create a dataProvider function with these dataset and use it in test function.
+- The dataProvider function must be public.
+- The dataProvider function must return an array or must be some iterator.
+- The test using the data provider must have the annotation @dataProvider.
+
+7. Create a test which runs the code that throws the exception so as to use @expectedException
+
+**Acceptance Criteria**
+
+- The test must be preceded by `@expectedException InvalidArgumentException`
+ or must contain `this->expectException(InvalidArgumentException::class);`
+- The test must otherwise throw some exception.
+
+8. Create a test that uses @expectedException annotation but otherwise does not throw any exception
+
+**Acceptance Criteria**
+ 
+- The test must be preceded by `@expectedException InvalidArgumentException`
+ or must contain `this->expectException(InvalidArgumentException::class);`
+- The test must otherwise not throw any exception
+
+9. Create a test to check if @datProvider amd @depends annotation can work together in a test.
+
+
+
