@@ -145,10 +145,11 @@ These are the few important assertions available on nodejs default package `asse
 - `assertCount($count, $array)`: This assert method tests if count gives and the count of array are equal.
 - `assertEmpty($empty)`: This assert method tests if the array is empty or not.
 - `assertGreaterThan($small, $greater)`: Thid assert method tests the result is greater than the given value.
-- `assertInstanceOf(class, $object)`: The assert method tests if the object return is instance of the class.
+- `assertInstanceOf(class, $object)`: The assert method tests if the object return is instance of the class.ll
 
 <hr />
 
+[Homework](Homework.md)
 
 
 
