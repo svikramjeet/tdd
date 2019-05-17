@@ -6,7 +6,7 @@ Below are the tasks :
 
 1. Create a test to see if the user get successfully created in the table.
 
-**Acceptance Criteria**
+ &nbsp; &nbsp; **Acceptance Criteria**
 
 - User row should be created with factory user.
 - Test should have following assertion and must pass it.
@@ -17,7 +17,7 @@ assertInstanceOf(User::class, $user);
 
 2. Create a test to verify the validation error of incorrect email while creating user.
 
-**Acceptance Criteria**
+ &nbsp; &nbsp; **Acceptance Criteria**
 
 - The user model should have the rule for email column of user
 - Also if for input data, the validation fails, it should not save the user and should return the error in an array.
@@ -29,7 +29,7 @@ assertArrayHasKey('email', $user);
 
 3. Similar to the task 2, more validation need to be added like name to be unique, password should be minumum 6 and maximum 8 characters.
 
-**Acceptance Criteria**
+ &nbsp; &nbsp; **Acceptance Criteria**
 
 - Add the rules for both name and password.
 - Both the tests created should have following assertions
@@ -41,7 +41,7 @@ assertArrayHasKey('password', $user);
 
 4. Create a test that used the output of other test as it's input.
 
-**Acceptance Criteria**
+ &nbsp; &nbsp; **Acceptance Criteria**
 
 - Use of annotation @depends
 - Create a test to successfully create a user
@@ -49,7 +49,7 @@ assertArrayHasKey('password', $user);
 
 5. Create a test to see if we can have it's dependency on 2 tests.
 
-**Acceptance Criteria**
+ &nbsp; &nbsp; **Acceptance Criteria**
 
 - Create a test A() and test B()
 - Create test C() which have annotations @depends A and @depends B
@@ -62,7 +62,7 @@ assertEqual('b', $b);
 
 6. Create a test to validate url with regular expression. 
 
-**Acceptance Criteria**
+ &nbsp; &nbsp; **Acceptance Criteria**
 
 - There should be atleast 3 datasets of url to validate the url creating function.
 - Create a dataProvider function with these dataset and use it in test function.
@@ -72,7 +72,7 @@ assertEqual('b', $b);
 
 7. Create a test which runs the code that throws the exception so as to use @expectedException
 
-**Acceptance Criteria**
+ &nbsp; &nbsp; **Acceptance Criteria**
 
 - The test must be preceded by `@expectedException InvalidArgumentException`
  or must contain `this->expectException(InvalidArgumentException::class);`
@@ -80,7 +80,7 @@ assertEqual('b', $b);
 
 8. Create a test that uses @expectedException annotation but otherwise does not throw any exception
 
-**Acceptance Criteria**
+ &nbsp; &nbsp; **Acceptance Criteria**
  
 - The test must be preceded by `@expectedException InvalidArgumentException`
  or must contain `this->expectException(InvalidArgumentException::class);`
