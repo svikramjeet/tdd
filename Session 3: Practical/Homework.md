@@ -4,7 +4,7 @@ Please do the tasks in the order specified with a commit per task. Also please f
 
 Below are the tasks : 
 
-1. **Create a test to see if the user get successfully created in the table.**
+1. **Create a test to see if the user get successfully created in the users table.**
 
  &nbsp; &nbsp; *Acceptance Criteria*
 
