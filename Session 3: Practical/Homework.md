@@ -65,7 +65,7 @@ assertEqual('b', $b);
  &nbsp; &nbsp; *Acceptance Criteria*
 
 - There should be atleast 3 datasets of url to validate the url creating function.
-- Create a dataProvider function with these dataset and use it in test function.
+- Create a dataProvider function with these datasets and use it in test function.
 - The dataProvider function must be public.
 - The dataProvider function must return an array or must be some iterator.
 - The test using the data provider must have the annotation @dataProvider.
@@ -86,7 +86,7 @@ assertEqual('b', $b);
  or must contain `this->expectException(InvalidArgumentException::class);`
 - The test must otherwise not throw any exception
 
-9. **Create a test to check if @datProvider amd @depends annotation can work together in a test.**
+9. **Create a test to check if @dataProvider amd @depends annotation can work together in a test.**
 
 10. **Create a test that have assertCount($count, $array) assertion in it.**
 
